@@ -128,5 +128,8 @@ public class searchingSteps {
         String actualMessage = seatAvailable.getText()+call.getText();
         Assert.assertEquals(expectedMessage,actualMessage) ;
     }
-
+    @Then("Close browser")
+    public void close_browser() {
+        driver.quit();
+    }
 }
